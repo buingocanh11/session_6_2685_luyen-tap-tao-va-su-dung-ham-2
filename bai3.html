@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa</title>
+</head>
+<body>
+<script>
+    let number = prompt("Enter your number")
+    function isFactorial(numb) {
+        let i=1;
+        let factorial=1;
+        while (i<=numb) {
+            factorial*= i;
+            i++;
+        }
+    return factorial;
+    }
+    document.write("Factorial of "+number+" is " + isFactorial(number));
+</script>
+</body>
+</html>
