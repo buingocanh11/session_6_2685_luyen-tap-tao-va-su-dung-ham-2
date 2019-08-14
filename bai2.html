@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh dien tich, Tich chu vi hinh tron</title>
+</head>
+<body>
+    <input type="number" id="radius" placeholder="Bán kính hình tròn">
+    <input type="button" value="Tính diện tích" onclick="isAcreage()">
+    <input type="button" value="Tính chu vi" onclick="isPerimeter()">
+    <p>Diện tích hình tròn là: <span id="acreage"></span></p>
+    <p>Chu vi hình tròn là: <span id="perimeter"></span></p>
+<script>
+    let elementRadius = document.getElementById("radius");
+    function isAcreage() {
+        let radius = elementRadius.value;
+        document.getElementById("acreage").innerHTML = radius*radius*3.14;
+    }
+    function isPerimeter() {
+        let radius = elementRadius.value;
+        document.getElementById("perimeter").innerHTML = 2*radius*3.14;
+    }
+</script>
+</body>
+</html>
